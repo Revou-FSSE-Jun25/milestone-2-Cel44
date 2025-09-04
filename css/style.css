@@ -1,0 +1,233 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat Alternates", sans-serif;
+    background: rgb(31, 31, 31);
+    color: #333;
+    text-align: center;
+    height: 100vh;
+}
+
+/* ----------------------------------- HEADER ---------------------------------- */
+
+header {
+    background: #2c4869;
+    color: white;
+    padding: 0 2.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+header h1 {
+    font-size: 1.5em;
+}
+
+.burger_button {
+    font-size: 1.5em;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background: none;
+}
+
+nav {
+    display: flex;
+    text-align: right;
+    gap: 0.5rem;
+    font-size: 0.8em;
+    
+    /* for burger menu drop down */
+        
+        display: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+nav.active {
+    display: flex;
+    position: absolute;
+        top: 4em;
+        right: 0px;
+        background: #2c4869;
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+        border-radius: 8px;
+}
+
+@media (min-width: 420px){
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .burger_button{
+        display: none;
+    }
+}
+
+@media (min-width: 768px){
+    nav {
+        gap: 2em;
+        font-size: 1em;
+    }
+}
+
+
+/* ------------------------------- HERO ---------------------------------- */
+
+.hero {
+    padding: 2rem;
+    text-align: left;
+    animation-name: transition;
+    animation-duration: 3s;
+}
+
+.turn-text-yellow {
+    color: yellow;
+}
+
+.hero h2 {
+    margin-top: 2em;
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.hero p {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: white;
+    line-height: 1.5;
+}
+
+@keyframes transition{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
+
+@media (min-width: 768px){
+    .hero{
+        margin: 3em;
+        font-size: 1em;
+    }
+}
+
+/* -------------------------------------- ABOUT --------------------------------- */
+
+.about-wrapper{
+    margin: 2em 5em 5em 5em;
+    justify-content: center;
+    line-height: 2;
+    color: white;
+    font-weight: 500;
+    font-family: inherit;
+    text-align: center;
+    font-size: 1em;
+    animation-name: transition;
+    animation-duration: 3s;
+}
+
+.about-wrapper h2{
+    font-weight: 600;
+}
+
+@media (min-width: 786px){
+    .about-wrapper p{
+        font-size: 1.2em;
+    }
+}
+
+/* ------------------------------- GAMES ------------------------------ */
+
+.games-wrapper {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    animation-name: transition;
+    animation-duration: 3s;
+}
+
+.games-wrapper h2{
+    color: white;
+    font-weight: 600;
+}
+
+.game-card {
+    position: relative;
+}
+
+.game-card img {
+    width: 70vw;
+    height: auto;
+    border-radius: 15px;
+    margin: 1em;
+}
+
+.game-card h3{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+    text-decoration: underline;
+    font-size: 1em;
+}
+
+.game-card h3:hover{
+    color: #ffffff;
+}
+
+@media (min-width: 420px){
+    .game-card h3{
+        font-size: 1.5em;
+    }
+
+    .game-card img{
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px){
+
+    .games-wrapper{
+        flex-direction: row;
+    }
+
+    .game-card img{
+        width: 90%;
+    }
+
+    .game-line{
+    flex-direction: row;
+    }
+
+    .game-list{
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+/* --------------------------------------- FOOTER ------------------------------- */
+
+footer {
+    background: #2c4869;
+    color: white;
+    padding: 0.3em;
+    margin-top: 2em;
+    font-size: 0.8em;
+}

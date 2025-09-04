@@ -1,0 +1,48 @@
+body{
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+.contact-section{
+    margin-top: 5em;
+}
+
+.contact-section h1{
+    font-size: 3em;
+    color: white;
+    margin-left: 1em;
+}
+
+.contact-wrapper{
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+form{
+    width: 50%;
+    text-align: left;
+    color: white;
+    font-size: 1.5em;
+}
+
+input, textarea{
+    height: 2em;
+    width: 80%;
+}
+
+.message-space{
+    gap: 2px;
+}
+
+button{
+    margin-top: 2em;
+    font-family: inherit;
+    font-weight: 600;
+}
+
+footer{
+    margin-top: 10em;
+    position: relative;
+    bottom: 0;
+}

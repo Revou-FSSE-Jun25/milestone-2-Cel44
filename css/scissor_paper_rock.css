@@ -1,0 +1,77 @@
+.game-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.game-wrapper{
+    padding: 3em 2em;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.game-wrapper h1{
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.game-wrapper h3{
+    margin: 1em;
+}
+
+.choices{
+    display: flex;
+    gap: 1.5em;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+.choices button{
+    border-radius: 10px;
+    padding: 0.5em 1em;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.choices button:hover{
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(45, 77, 130);
+    transform: scale(1.2);
+}
+
+.player-choice, .computer-choice{
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.result-display{
+    font-size: 1em;
+    font-weight: 600;
+    border: 3px solid #2c4869;
+    border-radius: 15px;
+    padding: 0.5em;
+}
+
+.restart-button{
+    border-radius: 15px;
+    padding: 0.5em;
+}
+
+.hidden {
+    display: none;
+}
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
