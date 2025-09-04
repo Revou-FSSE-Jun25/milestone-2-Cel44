@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1><span class="turn-text-yellow">Revo</span>Fun</h1>
+        
+        <button id="burger_button" class="burger_button">☰</button>
+
+        <nav id="navigation_links">
+            <a href="index.html">Home</a>
+            <a href="#games">Games</a>
+            <a href="index.html#about-section">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    <section id="contact-section" class="contact-section">
+        <div class="contact-wrapper">
+            <h1>Send us a message!</h1>
+            <form>
+                <fieldset>
+                    <legend>Profile</legend>
+                        
+                    <label id="input-name" for="input-name">Name:  </label><br>
+                    <input type="text" id="input-name" name="name" placeholder="Your Full Name" required/>
+                    <br><br>
+
+                    <label id="input-email" for="input-email">Email:  </label><br>
+                    <input type="email" id="input-email" name="email" placeholder="12345@gmail.com" required/>
+                    <br><br>
+
+                    <div class="message-space">
+                    <label id="input-message" for="input-message">Message:  </label><br>
+                    <textarea placeholder="Leave your message here"></textarea>
+                    </div>
+
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 RevoFun. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
