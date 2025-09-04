@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/scissor_paper_rock.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1><span class="turn-text-yellow">Revo</span>Fun</h1>
+        
+        <button id="burger_button" class="burger_button">☰</button>
+
+        <nav id="navigation_links">
+            <a href="index.html">Home</a>
+            <a href="index.html#games">Games</a>
+            <a href="index.html#about">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+   
+    <main class="game-container">
+        <div class="game-wrapper">
+            <h1>Rock - Paper - Scissor</h1>
+
+            <h3>Choose!</h3>
+
+            <div class="choices" id="choices">
+                <button onclick="game('rock')">🗿</button>
+                <button onclick="game('paper')">📄</button>
+                <button onclick="game('scissors')">✂</button>
+            </div>
+
+            <button id="restartButton" class="restart-button hidden" onclick="restartGame()">Try Again</button>
+
+            <div id="playerChoice" class="player-choice">Player: </div>
+            <div id="computerChoice" class="computer-choice">CPU: </div>
+            <div id="resultDisplay" class="result-display">RESULT</div>
+
+            
+        
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2025 RevoFun. All rights reserved.</p>
+    </footer>
+
+    <script src="js/scissor_paper_rock.js"></script>
+</body>
+</html>
