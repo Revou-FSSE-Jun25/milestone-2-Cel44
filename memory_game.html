@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/memory_game.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>RevoFun</h1>
+        
+        <button id="burger_button" class="burger_button">☰</button>
+
+        <nav id="navigation_links">
+            <a href="index.html">Home</a>
+            <a href="index.html#games">Games</a>
+            <a href="index.html#about">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="game-box" id="game-box">
+        <div class="game-name">
+            <h1>Memory Card Game</h1>
+            <button id ="restart-button" class="restart-button" onclick="restartGame()">Restart</button>
+        </div>
+
+        <div id="game-board" class="game-board">
+            <!----------------- CARDS WILL BE PLACED HERE ----------------->
+        </div>
+    </section>
+
+     <footer>
+        <p>© 2025 RevoFun. All rights reserved.</p>
+    </footer>
+
+    <script src="js/memory_game.js"></script>
+</body>
+</html>
