@@ -64,6 +64,7 @@ guessButton.addEventListener("click", () => {
 
     if (playerGuess < 1 || playerGuess > 100){
         result = "only 1-100";
+        resultDisplay.textContent = result;
         numberOfGuesses++;
         return;
     }
