@@ -226,6 +226,10 @@ nav.active {
     color: #ffffff;
 }
 
+.inverted-color{
+    color: white;
+}
+
 @media (min-width: 420px){
     .game-card h3{
         font-size: 1.5em;

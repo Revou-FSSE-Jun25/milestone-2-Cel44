@@ -7,10 +7,13 @@ main{
 }
 
 .game-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 4em 2em;
     background-color: white;
     border-radius: 15px;
-    flex-direction: column;
+    max-width: 300px;
 }
 
 .game-container h1{
@@ -29,6 +32,8 @@ main{
 .guesser{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 
@@ -44,4 +49,8 @@ main{
 .game-container button{
     font-family: inherit;
     font-weight: 500;
+}
+
+.result-display{
+    font-weight: 400;
 }
