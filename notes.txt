@@ -1,0 +1,9 @@
+phone = 420px
+
+tab = 768px
+
+README belum
+
+jangan lupa jadikan website gunakan git
+
+jangan lupa submit di coda

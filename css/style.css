@@ -34,6 +34,40 @@ header h1 {
     background: none;
 }
 
+.dropdown button{
+    background: none;
+    border: none;
+    font-family: inherit;
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #2c4869;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    border-radius: 4px;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 0.5em;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  text-align: left;
+}
+
 nav {
     display: flex;
     text-align: right;
@@ -76,6 +110,7 @@ nav.active {
 
 @media (min-width: 768px){
     nav {
+        display: flex;
         gap: 2em;
         font-size: 1em;
     }
@@ -225,6 +260,8 @@ nav.active {
 /* --------------------------------------- FOOTER ------------------------------- */
 
 footer {
+    position: relative;
+    bottom: 0;
     background: #2c4869;
     color: white;
     padding: 0.3em;

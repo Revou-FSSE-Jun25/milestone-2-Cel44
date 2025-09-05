@@ -69,9 +69,14 @@
     display: none;
 }
 
-
 footer{
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+@media (max-width: 420px){
+    .game-wrapper{
+        margin: 6em 4em;
+    }
 }

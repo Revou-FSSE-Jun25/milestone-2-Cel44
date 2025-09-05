@@ -11,17 +11,27 @@
 
 <body>
     <header>
-        <h1>RevoFun</h1>
+        <h1><span class="turn-text-yellow">Revo</span>Fun</h1>
         
         <button id="burger_button" class="burger_button">☰</button>
 
         <nav id="navigation_links">
             <a href="index.html">Home</a>
-            <a href="index.html#games">Games</a>
+
+             <div class="dropdown">
+                <a href="index.html#games"><button class="drop-button">Games</button></a>
+                    <div class="dropdown-content">
+                        <a href="scissors_paper_rock.html">Scissors - Paper -Rock</a>
+                        <a href="memory_game.html">Memory Card</a>
+                        <a href="number_guessing.html">Number Guessing</a>
+                    </div>  
+            </div>
+
             <a href="index.html#about">About</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
+
 
     <section class="game-box" id="game-box">
         <div class="game-name">

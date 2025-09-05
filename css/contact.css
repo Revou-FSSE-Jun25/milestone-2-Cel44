@@ -2,6 +2,11 @@ body{
     font-family: "Montserrat Alternates", sans-serif;
 }
 
+header{
+    justify-content: space-between;
+    align-items: baseline;
+}
+
 .contact-section{
     margin-top: 5em;
 }
@@ -35,7 +40,7 @@ input, textarea{
     gap: 2px;
 }
 
-button{
+fieldset button{
     margin-top: 2em;
     font-family: inherit;
     font-weight: 600;

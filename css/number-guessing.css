@@ -1,0 +1,47 @@
+main{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.game-container{
+    padding: 4em 2em;
+    background-color: white;
+    border-radius: 15px;
+    flex-direction: column;
+}
+
+.game-container h1{
+    font-size: 1.5em;
+}
+
+.game-container h3{
+    font-size: 1em;
+}
+
+.guesses-left{
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.guesser{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.guesser input{
+    width: 50%;
+}
+
+.guesser button{
+    width: 50%;
+    padding: 0.5em
+}
+
+.game-container button{
+    font-family: inherit;
+    font-weight: 500;
+}
