@@ -82,15 +82,17 @@ guessButton.addEventListener("click", () => {
         guessInput.disabled = true;
     } else if (playerGuess < computerNumber) {
         result = "Too Low!";
+        numberGuessed.push(`${playerGuess} ▲`);
         numberOfGuesses--;
     } else {
         result = "Too High!";
+        numberGuessed.push(`${playerGuess} ▼`);
         numberOfGuesses--;
     }
     
     triesLeft.textContent = `You have ${numberOfGuesses} tries left`
 
-    numberGuessed.push(playerGuess);
+    // numberGuessed.push(playerGuess);
     guessedNumber.textContent = "Guessed Number: " + numberGuessed.join(", ");
 
     resultDisplay.textContent = result;
