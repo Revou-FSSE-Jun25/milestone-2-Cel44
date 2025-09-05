@@ -1,9 +1,11 @@
+// ------------------ GAME VARIABLES
+
 let result = "";
 let numberOfGuesses = 10;
 let numberGuessed = [];
 let computerNumber = Math.floor((Math.random() * 100) + 1); 
 
-//  DOM
+// -------------------- GAME ELEMENTS
 
 const gameContainer = document.getElementById ("game-container")
 
@@ -53,7 +55,7 @@ gameContainer.appendChild (guessedNumber)
 gameContainer.appendChild (resetButton)
 gameContainer.appendChild(resultDisplay);
 
-// game functions
+//  -------------------------  GAME FUNCTIONS
 
 const guessInput = document.getElementById("guess-input");
 const guessButton = document.getElementById ("guess-button");
@@ -75,19 +77,26 @@ guessButton.addEventListener("click", () => {
         return;
     }
 
-    if (playerGuess === computerNumber) {
-        result = "You've win, please reset to play again~!";
-        numberOfGuesses--;
-        guessButton.disabled = true;
-        guessInput.disabled = true;
-    } else if (playerGuess < computerNumber) {
-        result = "Too Low!";
-        numberGuessed.push(`${playerGuess} ▲`);
-        numberOfGuesses--;
-    } else {
-        result = "Too High!";
-        numberGuessed.push(`${playerGuess} ▼`);
-        numberOfGuesses--;
+    switch (true){
+        case (playerGuess === computerNumber):
+            result = "You've win, please reset to play again~!";
+            numberOfGuesses--;
+            guessButton.disabled = true;
+            guessInput.disabled = true;
+            break;
+
+        case (playerGuess < computerNumber):
+            result = "Too Low!";
+            numberGuessed.push(`${playerGuess} ▲`);
+            numberOfGuesses--;
+            break;
+
+        default:
+            result = "Too High!";
+            numberGuessed.push(`${playerGuess} ▼`);
+            numberOfGuesses--;
+            break;
+
     }
     
     triesLeft.textContent = `You have ${numberOfGuesses} tries left`
