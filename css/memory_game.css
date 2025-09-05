@@ -16,31 +16,41 @@ body{
 }
 
 .game-name{
-    display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
-    margin: 3em;
+    margin: 2em;
 }
 
 .game-board {
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 15px;
     place-items: center;
     grid-template-columns: repeat(4, 1fr);
-    justify-content: center;
-    align-items: center;
     perspective: 1000px;
     margin-right: 20em;
     margin-left: 20em;
+    padding: 0 2em;
 }
 
 .card {
     width: 5vw;
-    height: 15vh;
+    height: 8vw;
     cursor: pointer;
     transform-style: preserve-3d;
     transition: transform 1s;
+}
+
+@media (max-width: 420px){
+    .game-board{
+        margin: 0;
+    }
+
+    .card{
+        width: 13vw;
+        height: 20vw;
+        font-size: 1em;
+    }
 }
 
 .card.flipped{
