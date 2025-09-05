@@ -9,6 +9,8 @@ header{
 
 .contact-section{
     margin-top: 5em;
+    animation-name: transition;
+    animation-duration: 3s;
 }
 
 .contact-section h1{
