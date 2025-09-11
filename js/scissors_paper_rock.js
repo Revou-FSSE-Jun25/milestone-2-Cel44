@@ -32,9 +32,9 @@ function game(playerChoice){
 
     determineResult (playerChoice, computerChoice);
 
-    playerDisplay.textContent = "Player: " + playerChoice;
-    computerDisplay.textContent = "CPU: " + computerChoice;
-    resultDisplay.textContent = "Result: you " + result.toUpperCase();
+    playerDisplay.textContent = `Player: ${playerChoice}`;
+    computerDisplay.textContent = `CPU: ${computerChoice}`;
+    resultDisplay.textContent = `Result: you ${result.toUpperCase()}`;
 
     if (result === "win"){
         resultDisplay.style.backgroundColor = "blue";
