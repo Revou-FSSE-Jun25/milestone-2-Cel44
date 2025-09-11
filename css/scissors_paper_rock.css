@@ -60,6 +60,21 @@
     padding: 0.5em;
 }
 
+.result-display.win{
+    background-color: blue;
+    color: white;
+}
+
+.result-display.lose{
+    background-color: red;
+    color: white;
+}
+
+.result-display.tie{
+    background-color: rgb(199, 183, 210);
+    color: black;
+}
+
 .restart-button{
     border-radius: 15px;
     padding: 0.5em;
