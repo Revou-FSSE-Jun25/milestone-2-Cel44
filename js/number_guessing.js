@@ -64,6 +64,12 @@ guessButton.addEventListener("click", () => {
 
     const playerGuess = Number(guessInput.value);
 
+    if(guessInput.value.trim() === "" || isNaN(playerGuess)){
+        result = "Please enter a number!";
+        resultDisplay.textContent = result;
+        return;
+    }
+
     if (playerGuess < 1 || playerGuess > 100){
         result = "only 1-100";
         resultDisplay.textContent = result;
