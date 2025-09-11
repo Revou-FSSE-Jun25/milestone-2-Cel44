@@ -37,18 +37,15 @@ function game(playerChoice){
     resultDisplay.textContent = `Result: you ${result.toUpperCase()}`;
 
     if (result === "win"){
-        resultDisplay.style.backgroundColor = "blue";
-        resultDisplay.style.color = "white"
+        resultDisplay.classList.add("win");
     }
 
     if (result === "lose"){
-        resultDisplay.style.backgroundColor = "red";
-        resultDisplay.style.color = "white"
+        resultDisplay.classList.add("lose");
     }
 
     if (result === "tie"){
-        resultDisplay.style.backgroundColor = "yellow";
-        resultDisplay.style.color = "black"
+        resultDisplay.classList.add("tie");
     }
 
     lockGame = true;
@@ -64,8 +61,7 @@ function restartGame() {
     computerDisplay.textContent = "CPU: ";
     resultDisplay.textContent = "RESULT";
 
-    resultDisplay.style.backgroundColor = "";
-    resultDisplay.style.color = "";
+    resultDisplay.classList.remove("win", "lose", "tie");
 
     restartButton.classList.add('hidden');
 }
