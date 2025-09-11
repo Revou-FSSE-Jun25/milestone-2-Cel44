@@ -54,10 +54,13 @@ function checkForMatch(){
     lockBoard = true;
     const [card1, card2] = flippedCards;
 
-    if (card1.dataset.cardPicture === card2.dataset.cardPicture){
-        disableCards();
-    } else {
-        unflipCards();
+    switch (true){
+        case (card1.dataset.cardPicture === card2.dataset.cardPicture) :
+            disableCards();
+            break;
+        default:
+            unflipCards();
+            break;
     }
 }
 
